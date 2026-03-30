@@ -3,34 +3,29 @@ import { PiBroadcast } from "react-icons/pi";
 
 function ReadyTransform() {
   return (
-    <div className="items-center text-center py-16 px-6 md:px-16">
-      {/* Badge */}
-      <span className="inline-flex items-center gap-2 bg-purple-100 text-purple-800 font-weight-500 text-sm px-4 py-1 rounded-full mb-4">
-        <PiBroadcast /> New: AI-Powered Tools Available
-      </span>
+    <div className="bg-linear-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-20 px-6 text-center">
+      <h2 className="text-3xl md:text-5xl font-bold mb-4">
+        Ready To Transform Your Workflow?
+      </h2>
 
-      {/* Heading */}
-      <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-6">
-        Supercharge Your <br />
-        Digital Workflow
-      </h1>
-
-      {/* Description */}
-      <p className="text-gray-500 mb-6 max-w-lg">
-        Access premium AI tools, design assets, templates, and productivity
-        software—all in one place. Start creating faster today.
+      <p className="text-white/80 max-w-2xl mx-auto mb-8">
+        Join thousands of professionals who are already using Digitools to work
+        smarter. Start your free trial today.
       </p>
 
-      {/* Buttons */}
-      <div className="flex gap-4">
-        <button className="gradient-bg text-white px-6 py-3 rounded-full font-medium shadow-md hover:opacity-90">
+      <div className="flex flex-col md:flex-row justify-center gap-4 mb-6">
+        <button className="bg-white text-purple-600 px-6 py-3 rounded-full font-medium hover:opacity-90">
           Explore Products
         </button>
 
-        <button className="flex items-center gap-2 border border-purple-500 text-purple-600 px-6 py-3 rounded-full font-medium hover:bg-purple-50">
-          ▶ Watch Demo
+        <button className="border border-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-purple-600 transition">
+          View Pricing
         </button>
       </div>
+
+      <p className="text-sm text-white/70">
+        14-day free trial • No credit card required • Cancel anytime
+      </p>
     </div>
   );
 }
